@@ -6,7 +6,7 @@ const RegisterScreen = ({ navigation }) => {
   return (
     <View>
       <Center >
-        <Heading paddingTop="10">Create New Account!</Heading>
+        <Heading paddingTop="100">Create New Account!</Heading>
         <Text fontSize="xs">Lorem ipsum dolor sit amet, consectetur</Text>
 
           <FormControl isRequired isInvalid paddingTop="90" paddingX="10" variant="outline">
