@@ -31,7 +31,7 @@ const LoginScreen = ({ navigation }) => {
             <Text mx="16"> Log In to My Account</Text>
             <Text mx="16">
               Don't have an account?{" "}
-              <Link href="https://nativebase.io" isExternal _text={{
+              <Link onPress={() => navigation.navigate('Register')} isExternal _text={{
               color: "red.400"
             }} mt={-0.5} _web={{
               mb: -2
