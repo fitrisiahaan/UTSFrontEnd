@@ -14,10 +14,10 @@ export default function App() {
     <NativeBaseProvider>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Splash">
-          <Stack.Screen name="Splash" component={SplashScreen} />
-          <Stack.Screen name="GetStarted" component={GetStartedScreen} />
-          <Stack.Screen name="Login" component={LoginScreen} />
-          <Stack.Screen name="Register" component={RegisterScreen} />
+          <Stack.Screen name="Splash" component={SplashScreen} options={{ headerShown: false }} />
+          <Stack.Screen name="GetStarted" component={GetStartedScreen} options={{ headerShown: false }} />
+          <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
+          <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }} />
         </Stack.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>

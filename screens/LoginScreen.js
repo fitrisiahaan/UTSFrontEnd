@@ -16,7 +16,8 @@ const LoginScreen = ({ navigation }) => {
             <Input p={2} placeholder="Password" />
             <FormControl.ErrorMessage>Something is wrong.</FormControl.ErrorMessage>
             <Button
-              mt={4}
+              mt={8}
+              mx={8}
               rounded={15}
               colorScheme="danger"
               size="md"

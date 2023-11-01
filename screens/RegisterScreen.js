@@ -9,7 +9,7 @@ const RegisterScreen = ({ navigation }) => {
         <Heading paddingTop="10">Create New Account!</Heading>
         <Text fontSize="xs">Lorem ipsum dolor sit amet, consectetur</Text>
 
-          <FormControl isRequired isInvalid paddingTop="90" paddingX="10">
+          <FormControl isRequired isInvalid paddingTop="90" paddingX="10" variant="outline">
             <FormControl.Label>Profile Name</FormControl.Label>
             <Input p={2} placeholder="Profile Name" />
             <FormControl.Label>Email Address</FormControl.Label>
@@ -19,6 +19,7 @@ const RegisterScreen = ({ navigation }) => {
             <FormControl.ErrorMessage>Something is wrong.</FormControl.ErrorMessage>
             <Button
               mt={4}
+              mx={8}
               rounded={15}
               colorScheme="danger"
               size="md"
@@ -26,7 +27,7 @@ const RegisterScreen = ({ navigation }) => {
                 console.log('hello');
               }}
             >
-              Login
+              Start Your Career
             </Button>
           </FormControl>
           <Box alignItems="center" paddingTop="140">
