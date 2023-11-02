@@ -1,18 +1,28 @@
-import { View, Text } from 'react-native';
-import { Heading } from 'native-base';
+import { View } from 'react-native';
+import { Heading, Container } from 'native-base';
 import TabsNavigation from '../components/TabsNavigation';
 import JobsCard from '../components/JobsCard';
 import SearchBar from '../components/SearchBar';
 
+import { ScrollView } from 'react-native';
+
 const SearchScreen = () => {
     return (
         <View style={{ flex: 1 }}>
-            <Heading >Heading Text</Heading>
-            
+            <Container paddingTop={60}>
+                <Heading px={30}>Let's</Heading>
+                <Heading px={30}>Find Your Perfect Jobs</Heading>
+            </Container>
             <SearchBar />
-            <View style={{ flex: 1 }}>
+            <ScrollView style={{ flex: 1 }} >
                 <JobsCard />
-            </View>
+                <JobsCard />
+                <JobsCard />
+                <JobsCard />
+                <JobsCard />
+                <JobsCard />
+                <JobsCard />
+            </ScrollView>
             <TabsNavigation />
         </View>
     );
