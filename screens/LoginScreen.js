@@ -21,9 +21,7 @@ const LoginScreen = ({ navigation }) => {
               rounded={15}
               colorScheme="danger"
               size="md"
-              onPress={() => {
-                console.log('hello');
-              }}
+              onPress={() => navigation.navigate('Search')}
             >
               Login
             </Button>
