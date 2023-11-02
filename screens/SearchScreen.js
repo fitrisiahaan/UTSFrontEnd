@@ -6,14 +6,14 @@ import SearchBar from '../components/SearchBar';
 
 import { ScrollView } from 'react-native';
 
-const SearchScreen = () => {
+const SearchScreen = ({ navigation }) => {
     return (
         <View style={{ flex: 1 }}>
             <Container paddingTop={60}>
                 <Heading px={30}>Let's</Heading>
                 <Heading px={30}>Find Your Perfect Jobs</Heading>
             </Container>
-            <SearchBar />
+            <SearchBar navigation={navigation} />
             <ScrollView style={{ flex: 1 }} >
                 <JobsCard />
                 <JobsCard />

@@ -3,7 +3,7 @@ import { View, TextInput, StyleSheet, Image, TouchableOpacity } from 'react-nati
 import searchIcon from '../assets/Icons/search-bar-icon.png';
 import filterIcon from '../assets/Icons/filter-icon.png';
 
-const SearchBar = ({ term, onTermChange, onTermSubmit, }) => {
+const SearchBar = ({ term, onTermChange, onTermSubmit, navigation }) => {
     return (
         <View style={styles.container}>
             <View style={styles.backgroundStyle}>
@@ -21,9 +21,7 @@ const SearchBar = ({ term, onTermChange, onTermSubmit, }) => {
                 />
             </View>
             <TouchableOpacity style={styles.filterButtonContainer} 
-                onPress={() => {
-                console.log('hello');
-              }}>
+                onPress={() => navigation.navigate('Filter')} >
                 <Image source={filterIcon} style={styles.filterButtonIcon} />
             </TouchableOpacity>
         </View>
@@ -72,9 +70,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F0EEEE',
-        borderWidth: 1,
-        borderColor: '#000000',
+        backgroundColor: '#B7BFC7',
     },
     filterButtonIcon: {
         width: 17,
